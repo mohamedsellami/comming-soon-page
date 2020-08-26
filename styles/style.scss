@@ -76,6 +76,7 @@ body {
     border-radius: 100px;
     border: none;
     background-image: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     &:hover {
       background-image: none;
