@@ -89,6 +89,8 @@ body {
   border: none;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f8bfbf), to(#ee8c8c));
   background-image: linear-gradient(#f8bfbf, #ee8c8c);
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
