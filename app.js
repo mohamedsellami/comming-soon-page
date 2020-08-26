@@ -36,7 +36,7 @@ function checkEmail() {
     }
   }
 }
-emailInput.addEventListener("click", clear);
+emailInput.addEventListener("input", clear);
 function clear() {
   if (emailInput.style.cssText == "border: 3px solid rgb(249, 98, 98);") {
     document.querySelector(".email .error").remove();
