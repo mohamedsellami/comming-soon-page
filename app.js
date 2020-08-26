@@ -38,9 +38,7 @@ function checkEmail() {
 }
 emailInput.addEventListener("focus", clear);
 function clear() {
-  if (emailInput.style.cssText == "border: 3px solid rgb(249, 98, 98);") {
     document.querySelector(".email .error").remove();
     document.querySelector(".email .worning").remove();
     emailInput.style.border = "1px solid lightgray";
-  }
 }
