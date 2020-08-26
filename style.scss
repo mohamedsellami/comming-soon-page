@@ -1,0 +1,227 @@
+$desaturated-red: hsl(0, 36%, 70%);
+$soft-red: hsl(0, 93%, 68%);
+$dark-grayish-red: hsl(0, 6%, 24%);
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+.image {
+  width: 100%;
+  .mobile {
+    width: 100%;
+  }
+  .desktop {
+    display: none;
+  }
+}
+.content {
+  text-align: center;
+  h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: $dark-grayish-red;
+    margin: 10% 0;
+    span {
+      color: $desaturated-red;
+      font-weight: 300;
+    }
+  }
+  .main-paragraph {
+    color: $desaturated-red;
+    width: 300px;
+    line-height: 30px;
+    margin: auto;
+    font-size: 18px;
+    margin-bottom: 5%;
+  }
+}
+.logo {
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.email {
+  width: 300px;
+  height: 50px;
+  position: relative;
+  margin-top: 5%;
+  margin: auto;
+  .email-input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    padding-left: 30px;
+    font-weight: 600;
+    background-color: transparent;
+  }
+  .submit {
+    position: absolute;
+    left: 80%;
+    width: 25%;
+    height: 100%;
+    border-radius: 100px;
+    border: none;
+    background-image: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    cursor: pointer;
+    &:hover {
+      background-image: none;
+      background-color: hsl(0, 80%, 86%);
+    }
+  }
+}
+::placeholder {
+  color: lightgray;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: $dark-grayish-red;
+  margin-top: 10%;
+  a {
+    color: $desaturated-red;
+  }
+}
+.worning {
+  margin: 0;
+  font-size: 13px;
+  margin-left: 30px;
+  color: hsl(0, 74%, 74%);
+  margin-top: 5px;
+  text-align: start;
+}
+.error {
+  position: absolute;
+  left: 70%;
+  top: 25%;
+}
+@media screen and(min-width: 700px) {
+  .image {
+    float: right;
+    height: 100vh;
+    min-height: 700px;
+    width: 40%;
+    .desktop {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+    }
+    .mobile {
+      display: none;
+    }
+  }
+  .content {
+    padding-left: 5%;
+    text-align: unset;
+    h1 {
+      margin: 0;
+      font-size: 59px;
+      text-transform: uppercase;
+      letter-spacing: 20px;
+      color: $dark-grayish-red;
+      margin-bottom: 2%;
+      span {
+        color: $desaturated-red;
+        font-weight: 300;
+      }
+    }
+    .main-paragraph {
+      color: $desaturated-red;
+      width: 360px;
+      line-height: 30px;
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+  .logo {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 7%;
+  }
+
+  .email {
+    width: 360px;
+    height: 50px;
+    position: relative;
+    margin: 3% 0;
+    .email-input {
+      width: 100%;
+      height: 100%;
+      border: 1px solid lightgray;
+      border-radius: 100px;
+      padding-left: 30px;
+      font-weight: 600;
+    }
+    .submit {
+      position: absolute;
+      left: 80%;
+      width: 20%;
+      height: 100%;
+      border-radius: 100px;
+      border: none;
+      background-image: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+      cursor: pointer;
+      &:hover {
+        background-image: none;
+        background-color: hsl(0, 80%, 86%);
+      }
+    }
+  }
+  .main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-size: 60%;
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: $dark-grayish-red;
+    margin-top: 5%;
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    a {
+      color: $desaturated-red;
+    }
+  }
+  .worning {
+    margin: 0;
+    font-size: 13px;
+    margin-left: 30px;
+    color: hsl(0, 74%, 74%);
+    margin-top: 5px;
+  }
+  .error {
+    position: absolute;
+    left: 70%;
+    top: 25%;
+  }
+}
+@media screen and(min-width: 870px) {
+  .content {
+    padding-left: 10%;
+    .main-paragraph {
+      width: 410px;
+    }
+  }
+  .logo {
+    margin-left: 10%;
+  }
+  .email {
+    width: 410px;
+  }
+}
